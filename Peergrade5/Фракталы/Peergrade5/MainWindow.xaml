@@ -1,0 +1,29 @@
+﻿<Window x:Class="Peergrade5.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Peergrade5"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="450" Width="877">
+    <Grid x:Name="gr_Copy" Loaded="Grid_Loaded">
+        <Canvas x:Name="Canvas" Margin="0,0,214,0"/>
+        <Label Content="Выберите фрактал:" HorizontalAlignment="Left" Height="30" Margin="609,37,0,0" VerticalAlignment="Top" Width="174"/>
+        <Button x:Name="Tree" Content="Дерево Пифагора" HorizontalAlignment="Left" Margin="610,72,0,0" VerticalAlignment="Top" Width="174" Click="Button_Click"/>
+        <Button x:Name="Koch" Content="Кривая Коха" HorizontalAlignment="Left" Margin="610,97,0,0" VerticalAlignment="Top" Width="174" Click="Koch_Click"/>
+        <Button x:Name="Carpet" Content="Ковёр Серпинского" HorizontalAlignment="Left" Margin="610,122,0,0" VerticalAlignment="Top" Width="174" Click="Carpet_Click"/>
+        <Button x:Name="Triangle" Content="Треугольник Серпинского" HorizontalAlignment="Left" Margin="610,147,0,0" VerticalAlignment="Top" Width="173" Click="Triangle_Click"/>
+        <Button x:Name="Kantor" Content="Множество Кантора" HorizontalAlignment="Left" Margin="610,172,0,0" VerticalAlignment="Top" Width="173" Click="Kantor_Click"/>
+        <Label Content="Глубина рекурсии:" HorizontalAlignment="Left" Margin="610,199,0,0" VerticalAlignment="Top" Width="116" Height="29"/>
+        <TextBox x:Name="Rec" HorizontalAlignment="Left" Margin="783,199,0,0" Text="" TextWrapping="Wrap" VerticalAlignment="Top" Width="63" Height="29" TextChanged="Draw_Click"/>
+        <TextBox x:Name="Koef" HorizontalAlignment="Left" Margin="783,233,0,0" Text="" TextWrapping="Wrap" VerticalAlignment="Top" Width="63" Height="29"/>
+        <Button Content="Справка" HorizontalAlignment="Left" Margin="610,10,0,0" VerticalAlignment="Top" Click="Button_Click_1"/>
+        <Label Content="Угол №1(градусы):" HorizontalAlignment="Left" Margin="611,267,0,0" VerticalAlignment="Top" Width="116"/>
+        <Label Content="Угол №2(градусы):" HorizontalAlignment="Left" Margin="606,304,0,0" VerticalAlignment="Top" Width="116"/>
+        <Label Content="Коэф(меньше 1):" HorizontalAlignment="Left" Margin="610,233,0,0" VerticalAlignment="Top" Width="116"/>
+        <TextBox x:Name="rightAngle" HorizontalAlignment="Left" Margin="783,301,0,0" Text="" TextWrapping="Wrap" VerticalAlignment="Top" Width="63" Height="29"/>
+        <TextBox x:Name="leftAngle" HorizontalAlignment="Left" Margin="783,267,0,0" Text="" TextWrapping="Wrap" VerticalAlignment="Top" Width="63" Height="29"/>
+        <TextBox x:Name="Distance" HorizontalAlignment="Left" Margin="783,335,0,0" Text="" TextWrapping="Wrap" VerticalAlignment="Top" Width="64" Height="29"/>
+        <Label Content="Расстояние между уровнями:" HorizontalAlignment="Left" Margin="609,335,0,0" VerticalAlignment="Top" Width="174"/>
+    </Grid>
+</Window>
